@@ -1,84 +1,112 @@
-1. #include <stdio.h>
+1.	//Write a program to print Hello Students on the screen.
+	#include <stdio.h>
 
-	int main(){
- 	printf("Hello Student\n");
-    	return 0;
-	}
-
-   2.	#include <stdio.h>
-	int main(){
-      printf("Hello \nStudent\n");
-      return 0;
-	}
-   3. #include <stdio.h>
-	int main(){
-    	printf("\"MySirG\"");
-    	return 0;
-	}
-   4. #include <stdio.h>
-	#define PI 3.14
-	int main(){
-   	 float radius;
-   	 printf("Enter value of radius of circle :");
-   	 scanf("%f",&radius);
-   	 printf("\"Area of circle of is %1.2f having the radius 1.2f.\"",PI*radius*radius, radius);
-   	 return 0;
-	}
-
-   5. int main()
-	{
-	  	char str[20];
-  	   	int i;
-    		printf("Enter Your string :");
-    		scanf("%s",str);
-    		i = printf("%s",str);
-    		printf("String leanth is :%d",i); 
-		return 0;
-	}
-
-
-   6. #include <stdio.h>
 	int main()
 	{
-	   char Name[15];
-	   printf("Enter Your name :");
- 	   scanf("%s",&Name);
- 	   printf("Hello, %s",Name);
- 	   return 0;
+Â 		printf("Hello Student\n");
+Â  Â  		return 0;
 	}
 	
-7.8.9 #include <stdio.h>
+2.	//Write a program to print Hello in the first line and Students in the second line.
+	#include <stdio.h>
 	int main()
 	{
-   	 printf("%%d\n");
-   	 printf("\\n\n");
-  	  printf("\\\\");
-   	 return 0;
+		printf("Hello \nStudent\n");
+Â  Â   		return 0;
 	}
-10.   #include <stdio.h>
-	int main(){
+3. 	//Write a program to print â€œMySirGâ€ on the screen. (Remember to print in double quotes)
+	#include <stdio.h>
+		int main()
+	{
+Â  Â  		printf("\"MySirG\"");
+Â  Â  		return 0;
+	}
+4. 	/* WAP to find the area of the circle. Take radius of circle from user as input and print the
+	result in below given format.
+	Expected output format â€“ â€œArea of circle is A having the radius Râ€. Replace A with area
+	& R with radius. */
+	#include <stdio.h>
+	#define PI 3.14
+	int main()
+	{
+Â  Â 	 	float radius;
+Â  Â 	 	printf("Enter value of radius of circle :");
+Â  Â 	 	scanf("%f",&radius);
+Â  Â 	 	printf("\"Area of circle of is %1.2f having the radius 1.2f.\"",PI*radius*radius, radius);
+Â  Â 	 	return 0;
+	}
+
+   5. 	//WAP to calculate the length of String using printf function.
+   	int main()
+	{
+	 Â 	char str[20];
+Â  	  Â 	int i;
+Â  Â  		printf("Enter Your string :");
+Â  Â  		scanf("%s",str);
+Â  Â  		i = printf("%s",str);
+Â  Â  		printf("String leanth is :%d",i); 
+		return 0;
+	}
+
+
+   6. 	/* WAP to print the name of the user in double quotes.
+	Expected output format â€“ â€œHello , Amit Kumarâ€ */
+   	#include <stdio.h>
+	int main()
+	{
+	Â  Â char Name[15];
+	Â  Â printf("Enter Your name :");
+Â 	 Â  scanf("%s",&Name);
+Â 	 Â  printf("Hello, %s",Name);
+Â 	 Â  return 0;
+	}
+	
+7.	//WAP to print â€œ%dâ€ on the screen.
+8. 	//WAP to print â€œ\nâ€ on the screen.
+9. 	//WAP to print â€œ\\â€ on the screen.
+	#include <stdio.h>
+	int main()
+	{
+Â  Â 	 	printf("%%d\n");
+Â  Â 	 	printf("\\n\n");
+Â  	Â  	printf("\\\\");
+Â  Â 	 	return 0;
+	}
+10.   	/* WAP to take date as an input in below given format and convert the date format and
+	display the result as given below.
+	User Input date format â€“ â€œDD/MM/YYYYâ€ (27/11/2022)
+	Output format â€“
+	â€œDay â€“ DD , Month â€“ MM , Year â€“ YYYYâ€ (Day â€“ 27 ,Month â€“ 07 , Year â€“ 2022) */
+	#include <stdio.h>
+	int main()
+	{
 	 	char date[10];
 		printf("Enter date in DD/MM/YYYY:");
-  		scanf("%s",date);
-    		printf("Day-%c%c,Month-%c%c,Year-%c%c%c%c",date[0],date[1],date[3],date[4],date[6],date[7],date[8],date[9]);
+Â  		scanf("%s",date);
+		printf("Day-%c%c,Month-%c%c,Year-%c%c%c%c",date[0],date[1],date[3],date[4],date[6],date[7],date[8],date[9]);
 		return 0;
-		}
+	}
 
-11.	#include <stdio.h>
-	 int main(){
-  	 char time[5];
-   	 printf("Enter date in HH:MM");
-   	 scanf("%s",time);
- 	 printf("%c%c Hour and %c%c Minute",time[0],time[1],time[3],time[4]);
-	 return 0;
-	}
-12.  #include <stdio.h>
-int main()
-	{  	int x = printf("ineuron");
-   		printf("%d",x);
-  	 	return 0;
-	}
-		
+11.	/* WAP to take time as an input in below given format and convert the time format and
+	display the result as given below.
+	User Input date format â€“ â€œHH:MMâ€
+	Output format â€“ â€œHH hour and MM Minuteâ€ */
+	#include <stdio.h>
+	 int main()
+	 {
+ Â 	 	char time[5];
+Â  Â 	 	printf("Enter date in HH:MM");
+Â  Â 		scanf("%s",time);
+Â 	 	printf("%c%c Hour and %c%c Minute",time[0],time[1],time[3],time[4]);
+	 	return 0;
+	 }
+12. 	//Find output of below code:
+	int main()
+	{
+		int x = printf(â€œineuronâ€);
+		printf(â€œ%dâ€,x);
+		return 0;
+	}	
 	Output of this code is: ineuron7
 
 
